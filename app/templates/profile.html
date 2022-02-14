@@ -1,0 +1,25 @@
+﻿{% extends "base.html" %}
+
+{% block main %}
+<div class=" grid-container">
+    <div class="first">
+        <head>
+            <link rel=stylesheet type=text/css href="{{ url_for('static',filename="app.css") }}">
+            <img src="{{url_for('static', filename='profile pic/Me.png')}}">
+            <h1>Ronique Reid</h1>
+            <h2 class="username"> @rreid</h2>
+            <p class="a">Portmore,Jamaica</p>
+            <p class="a">Joined January,2022</p>
+        </head>
+    </div>
+    <div class="second">
+        <p class="a">A loner that enjoys listening to kpop and think that people are fickle creatures. </p>
+        <p>Also I love watching rerun of Friends and How I Met Your Mother</p>
+    </div>
+
+    <p class="b">8  160  200</p>
+    <p class="c">Posts   Following  Followers</p>
+
+    <button class="button">Follow</button>
+</div>
+{% endblock %}
